@@ -19,3 +19,40 @@ const stringToNumber = (str) => {
   //You can also transform a string into a number using the Number function:
   //return Number(str);
 };
+
+/**
+ * 2) Find Maximum and Minimum Values of a List
+ *
+ * Description:
+ * Your task is to make two functions that receive a list of integers as input,
+ * and return the largest and lowest number in that list, respectively.
+ *
+ * Examples:
+ * [4,6,2,1,9,63,-134,566]         -> max = 566, min = -134
+ * [-52, 56, 30, 29, -54, 0, -110] -> min = -110, max = 56
+ * [42, 54, 65, 87, 0]             -> min = 0, max = 87
+ * [5]                             -> min = 5, max = 5
+ */
+const min = (list) => {
+  let number = list[0];
+
+  list.forEach((num) => {
+    if (num < number) {
+      number = num;
+    }
+  });
+
+  return number;
+};
+
+const max = (list) => {
+  let number = list[0];
+
+  list.forEach((num) => {
+    if (num > number) {
+      number = num;
+    }
+  });
+
+  return number;
+};
