@@ -56,3 +56,30 @@ const max = (list) => {
 
   return number;
 };
+
+/**
+ * 3) Double Char
+ *
+ * Description:
+ * Given a string, you have to return a string in which each character
+ * (case-sensitive) is repeated once.
+ *
+ * Examples:
+ * "String"       -> "SSttrriinngg"
+ * "Hello World"  -> "HHeelloo WWoorrlldd"
+ * "1234!_"       -> "11223344!!__"
+ */
+
+const duplicate = (str) => {
+  const arrayString = [];
+  var duplicated = "";
+
+  arrayString.push(...str);
+
+  arrayString.forEach((element) => {
+    var duplicatedParts = element.repeat(2);
+    duplicated += duplicatedParts;
+  });
+
+  return duplicated;
+};
