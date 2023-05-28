@@ -83,3 +83,21 @@ const duplicate = (str) => {
 
   return duplicated;
 };
+
+/**
+ * 4) Reversed Strings
+ *
+ * Description:
+ * Complete the solution so that it reverses the string passed into it.
+ *
+ * Examples:
+ * 'world'  =>  'dlrow'
+ * 'word'   =>  'drow'
+ */
+
+const solution = (str) => {
+  const reverveArray = [];
+  reverveArray.push(...str);
+
+  return reverveArray.reverse().join("");
+};
