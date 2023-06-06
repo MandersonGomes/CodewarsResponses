@@ -42,3 +42,27 @@ const highAndLow = (numbers) => {
     }
   }
 };
+
+/**
+ * 2) Reverse words
+ *
+ * Description:
+ * Complete the function that accepts a string parameter, and
+ * reverses each word in the string. All spaces in the string
+ * should be retained.
+ *
+ * Examples:
+ * "This is an example!"  ==> "sihT si na !elpmaxe"
+ * "double  spaces"       ==> "elbuod  secaps"
+ */
+
+const reverseWords = (str) => {
+  const reverseString = str.split(" ").reverse().join(" ");
+  let newString = "";
+
+  for (let i = reverseString.length - 1; i >= 0; i--) {
+    newString += reverseString[i];
+  }
+
+  return newString;
+};
